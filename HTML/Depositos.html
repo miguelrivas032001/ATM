@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depositos</title>
+    <link rel="stylesheet" href="../CSS/Deposito.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1 id="menu">DEPOSITOS</h1>
+        </div>
+        <div class="container-2">
+            <div id="SALDOS">
+                <label for="DEPOSITO">
+                    <span>DEPOSITO $</span>
+                    <input type="number" id="DEPOSITO" name="DEPOSITO" placeholder="0.00">
+                </label>
+            </div>
+        </div>
+        <input type="button" value="DEPOSITAR C.AHORRO" onclick="depositarAhorro()" id="Saldo-ahorro">
+        <input type="button" value="REGRESAR" onclick="window.location.href='menuPrincipal.html'" id="regresar-bt">
+        <div id="mensaje" style="font-size: 20pt; font-weight: 500; color: green;"></div>
+    </div>
+    <script src="../js/depositos.js"></script>
+</body>
+</html>
+

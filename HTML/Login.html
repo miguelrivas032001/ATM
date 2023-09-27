@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ATM</title>
+    <link rel="stylesheet" href="../CSS/loginestilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="../js/Login.js"></script>
+</head>
+<body>
+   <div class="container">
+    <div class="imagen-logo">
+        <picture>
+            <img src="../Img/Logo.png" alt="logo-cajero">
+            </picture>
+    </div>
+    <form id="loginForm">
+        <div>
+          <label for="Usuario">
+            <span>USUARIO</span>
+            <input type="text" id="Usuario" name="Usuario" required>
+          </label>
+        </div>
+        <div>
+          <label for="password">
+            <span>CONTRASEÑA</span>
+            <input type="password"  id="password" name="password" required>
+          </label>
+        </div>
+        <div>
+          <button id="botonLogin" class="btn-primary" >
+            Ingresar
+          </button>
+        </div>
+        <div id="mensaje-autenticacion" style="font-size: 20pt; font-family: 700;"></div>
+      </form>
+      
+   <script src="../Js/ClaseLogin.Js"></script>
+   </div>
+   <script>
+    var form = document.getElementById('loginForm');
+  var mensajeAutenticacion = document.getElementById('mensaje-autenticacion');
+
+  // Agregar un evento de escucha al formulario cuando se envíe
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar el envío del formulario
+
+    // Obtener los valores del usuario y contraseña ingresados
+    var usuario = document.getElementById('Usuario').value;
+    var contraseña = document.getElementById('password').value;
+
+    // Verificar las credenciales
+    if (verificarCredenciales(usuario, contraseña)) {
+      // Credenciales válidas, mostrar mensaje de éxito
+      mensajeAutenticacion.textContent = 'Acceso concedido al ATM.';
+      mensajeAutenticacion.style.color = 'green';
+      setTimeout(function() {
+        window.location.href = 'menuPrincipal.html';
+      }, 3000);
+    } else {
+      // Credenciales inválidas, mostrar mensaje de error
+      mensajeAutenticacion.textContent = 'Credenciales inválidas. Acceso denegado al ATM.';
+      mensajeAutenticacion.style.color = 'red';
+    }
+  });
+   </script>
+</body>
+</html>

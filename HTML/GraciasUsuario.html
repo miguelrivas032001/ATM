@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retire Su Dinero</title>
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+            background-color: black;
+            background-image: linear-gradient(rgba(5,7,12,0.85),rgba(5,7,12,0.85)), url(../Img/Logo.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            background-position-y: 50%;
+		}
+		.contenedor {
+			width: 30%;
+			background-color: #fff;
+			box-shadow: 0 0 20px white;
+			text-align: center;
+            border-radius: 10px;
+            border: solid 2px black;
+            font-size: 15pt;
+            height: 500px;
+		}
+        .contenedor picture img {
+            width:  30%;
+            position: initial;
+        }
+        .imagen {
+            background-color: black;
+            width: 100%;
+            position: initial;
+        }
+
+        .contenedor h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           transform: translate(0%,5%);
+           color: rgb(0, 0, 0);
+        }
+        .logo-retiro img {
+            border: solid 2px black;
+            border-radius: 10px;
+            width: 80%;
+            transform: translate(0%,5%);
+        }
+
+
+	</style>
+    <meta http-equiv="refresh" content="5; URL= Login.html">
+</head>
+<body>
+	<div class="contenedor">
+        <div class="imagen">
+            <picture>
+                <img src="../Img/Logo.png" alt="logo-banco">
+            </picture>
+        </div>
+        <div>
+            <picture class="logo-retiro">
+                <img src="../Img/Gracias.png" alt="logo-efectivo">
+            </picture>
+        </div>
+		<h1>GRACIAS POR USAR NUESTROS SERVICIOS</h1>
+	</div>
+    <script>
+		setTimeout(function(){
+			window.location.href = "Login.html";
+		}, 5000);
+	</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color:  black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-image: linear-gradient(rgba(5,7,12,0.85),rgba(5,7,12,0.85)), url(../Img/Logo.png);
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-size: cover;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 550px;
+    background-color:  white;
+    height: 525px;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 0 0 30px white;
+    transform: translate(-2%, 35%);
+}
+
+.imagen-logo picture img {
+    width: 40%;
+}
+
+.imagen-logo picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: initial;
+    opacity: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.imagen-logo {
+    position: initial;
+}
+
+.inputs-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+label {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: solid 2px black;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    font-size: 14pt;
+    background-color: white;
+    color: black;
+}
+
+label input:hover {
+    
+    box-shadow: 0 0 8px black;
+}
+
+label input:focus {
+    
+    box-shadow: 0 0 8px black;
+  
+}
+
+label span {
+font-weight: 500;
+color: black;
+font-size: 13pt;
+display: flex;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    width: 80%;
+    font-size: 15pt;
+    border: solid 1px white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 8px black;
+}
+
+#Usuario {
+    background-image: url(../Img/pngegg.png);
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 42px;
+    width: 100%;
+}
+
+#password {
+    background-image: url(../Img/candado.png);
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 42px;
+    width: 100%;
+}
+
+
+
+form div {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+}
+
+form a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color:  black;
+    background-image: linear-gradient(rgba(5,7,12,0.85),rgba(5,7,12,0.85)), url(../Img/Logo.png);
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+        background-color: white;
+        width: 700px;
+        height: 850px;
+        margin: auto;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        border: solid 2px black;
+        border-radius: 50px;
+        box-shadow: 0 0 30px white;
+        transform: translate(0%,4%);
+}
+.container #menu {
+    position: initial;
+align-items: center;
+}
+
+.botones {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    height: 800px;
+    width: 1250px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 20px;
+    width: 500px;
+    border: solid 1px black;
+    border-radius: 15px;
+    font-size: 25pt;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
+    background-color: white;
+    color: black;
+    position: initial;
+}
+
+button:hover {
+opacity: 0.95;
+color: black;
+box-shadow: 0 0 10px black;
+}
+
+
+h1 {
+    color: white;
+    font-size: 50pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: overline;
+
+}
+
+.menu {
+    background-color: black;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.saldo {
+    background-image: url(../Img/VermiSaldo.png) ;
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+
+.efectivo {
+    background-image: url(../Img/RetirarEfectivo.png);
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+
+.fondos {
+    background-image: url(../Img/Depositar\ fondos.png);
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+
+.salir {
+    background-image: url(../Img/Salir.png);
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+}
+    

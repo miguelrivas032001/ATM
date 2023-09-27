@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+background-color: black;
+background-image: linear-gradient(rgba(5,7,12,0.85),rgba(5,7,12,0.85)), url(../Img/Logo.png);
+    background-position-x: 50%;
+    background-position-y: 28%;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    width: 1300px;
+    height: 820px;
+    margin: auto;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 50px;
+    transform: translate(0%,5%);
+    box-shadow: 0 0 30px white;
+}
+
+.menu {
+    background-color: black;
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+h1 {
+    color: white;
+    font-size: 50pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: overline;
+
+}
+
+.botones-izquierda {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+    margin-right: auto;
+    height: 100%;
+}
+
+.botones-derecha {
+    overflow: auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    float: right;
+    width: 50%;
+    text-align: right;
+    margin-left: auto;
+    position: initial;
+    height: 100%;
+}
+
+.padre-botones {
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+button {
+    padding: 20px;
+    width: 80%;
+    margin: 50px;
+    border: solid 1px black;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 25pt;
+    cursor: pointer;
+    background-color: white;
+    
+}
+
+button:hover {
+    box-shadow: 0 0 8px black;
+   
+}
+
+.botones-izquierda button {
+    background-image: url(../Img/Flecha\ Derecha.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 20px center;
+
+}
+
+.botones-derecha button {
+    background-image: url(../Img/Flecha\ Izquierda.png);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right center ;
+}
